@@ -2,19 +2,18 @@ document.addEventListener('DOMContentLoaded', function() {
   var checkPageButton = document.getElementById('checkPage');
   checkPageButton.addEventListener('click', function() {
 
-    chrome.tabs.getSelected(null, function(tab) {
-      d = document;
+    window.open("https://webpages.uncc.edu/jcao6/Exercise/WebsiteProject/SEproject/SEproject.html");
 
-      var f = d.createElement('form');
-      f.action = 'https://itis2-test.blogspot.html?bm';
-      f.method = 'post';
-      var i = d.createElement('input');
-      i.type = 'hidden';
-      i.name = 'url';
-      i.value = tab.url;
-      f.appendChild(i);
-      d.body.appendChild(f);
-      f.submit();
-    });
+  }, false);
+}, false);
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var checkPageButton = document.getElementById('contact');
+  checkPageButton.addEventListener('click', function() {
+
+      window.open("https://webpages.uncc.edu/jcao6/Exercise/WebsiteProject/SEproject/contact_us.html");
+
   }, false);
 }, false);
