@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Bug Catcher",
-  "description": "This extension is a test",
+  "name": "X Company Enterprises",
+  "description": "This extension for  the ITCS  2155 project site",
   "version": "1.0",
 
   "browser_action": {
