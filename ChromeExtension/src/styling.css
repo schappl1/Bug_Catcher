@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Apercu Mono';
+    src: url('chrome-extension://__MSG_@@extension_id__/Font/ApercuPro-Mono.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
   font-family: 'Apercu Pro-Bold';
   font-size: 20px;
@@ -39,6 +46,66 @@ html {
 }
 
 button {
+  font-family: 'Apercu Pro-Bold';
+  background-color: #EDF5E1;
+  color: #05386B;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+#QuickReport, #submitButton {
+  text-align: center;
+}
+
+input[type=text], input[type=email], textarea{
+  background-color: #EDF5E1;
+  border: none;
+  border-bottom: 4px solid #8EE4AF;
+  padding: 3px;
+  resize: none;
+}
+
+input[type=text] {
+  background: url('chrome-extension://__MSG_@@extension_id__/mail-big.png');
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-size: 20px 20px;
+}
+
+input[type=email] {
+  background: url('chrome-extension://__MSG_@@extension_id__/mailOpen-big.png');
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-size: 20px 20px;
+}
+
+input[type=text]:focus {
+  background: url('chrome-extension://__MSG_@@extension_id__/mail-big.png');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+input[type=email]:focus {
+  background: url('chrome-extension://__MSG_@@extension_id__/mailOpen-big.png');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  background-color: #8EE4AF;
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  width: 80%;
+  resize: none;
+}
+
+input[type=button] {
   font-family: 'Apercu Pro-Bold';
   background-color: #EDF5E1;
   color: #05386B;

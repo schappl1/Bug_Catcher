@@ -10,21 +10,29 @@
 	<body>
 		<header>
 			<img src="./ContactUs_files/LabTechHeader.png" alt="Logo" class="button hvr-pulse-grow">
-				<h1>Help us to help you! Fill out the form below.</h1>
+				<h1>You found a bug! Fill out the form below.</h1>
 		</header>
 		<main>
-			<h1> Contact Us</h1>
+			<h1> Bug report</h1>
 			<p>Our response time is approximately <b><i>X minutes.</i></b></p>
 			<!-- add form for collecting the inputs from user -->
 			<form id="contact1">
 
 				<input type="text" id="name1" placeholder="Enter the subject here...">
 				<input type="email" id="email1" placeholder="Enter your e-mail here...">
-				<input type="text" id="msg1" placeholder="Enter your issue here...">
+				<!-- text form ---->
+				<form action="/action_page.php" id="usrform">
+				</form>
+				<br>
+				<textarea rows="4" cols="50" name="comment" form="usrform"  placeholder="Describe your report here..."></textarea>
+			<!-- attach file button -->	
+				 <form action="/action_page.php">
+				  <input type="file" name="pic" accept="image/*">
+				</form> 
 			<!-- Submit button -->
 			<input type="button" class="button hvr-bob" name="submit1" id="submit1" value="Submit">
 				<br><br>
-			<!-- Below is the "Go Back" button -->
+			the "Go Back" button -->
 			<div class="containerBack">
 				<a class="goBack" href="https://webpages.uncc.edu/jcao6/Exercise/WebsiteProject/SEproject/contact_us.html">Go back</a>
 			</div>
