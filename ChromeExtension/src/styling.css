@@ -95,3 +95,10 @@ input[type=button] {
 .placeicons {
   font-family: "fontawesome"
 }
+
+label {
+  padding-right: 100px;
+  font-family: 'Apercu Pro-Bold';
+  font-size: 14px;
+  color: #05386B;
+}
