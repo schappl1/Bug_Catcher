@@ -18,22 +18,23 @@
 
   <body>
 
-    <p id=quickReport ><button id="quickRep" class= "button hvr-grow">Quick Report</button>
+    <p id=QuickReport ><button id="quickRep" class= "button hvr-grow">Quick Report</button> </p>
 
 
 
-	<form id="quickRep1">
+	<form id="quickRep1" class="animated bounceInLeft">
 
 				<input type="text" id="name1" placeholder="Enter the subject here...">
 				<input type="email" id="email1" placeholder="Enter your e-mail here...">
-				<input type="text" id="msg1" placeholder="Enter your issue here...">
+				<textarea id="msg1" rows=3 placeholder="Enter your issue here..."></textarea>
 								<br><br>
 
-				<input type="button" name="submit1" id="submit1" value="Submit">
 
 <!-- attach file button -->
 				 <form action="/action_page.php">
 				  <input type="file" name="pic" accept="image/*">
+
+          <p id=QuickReport> <input type="button" name="submit1" id="submit1" value="Submit" class= "button hvr-grow"> </p>
 				</form>
 	</form>
 
