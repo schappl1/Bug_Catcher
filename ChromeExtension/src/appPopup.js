@@ -18,21 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }, false);
 }, false);
 
- 
+
 document.addEventListener('DOMContentLoaded', function() {
 	document.getElementById("quickRep1").style.display="none";
 
   var qucikReportButton = document.getElementById('quickRep');
   qucikReportButton.addEventListener('click', function() {
 
- 
-				 document.getElementById("quickRep1").style.display="block";
+      if(document.getElementById("quickRep1").style.display.valueOf()=="block") {
+				 document.getElementById("quickRep1").style.display="none";
+       }
+       else {
+         document.getElementById("quickRep1").style.display="block";
+       }
 
 
   }, false);
 }, false);
-
-
-
-
-
