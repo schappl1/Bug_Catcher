@@ -70,32 +70,6 @@ input[type=text], input[type=email], textarea{
   resize: none;
 }
 
-input[type=text] {
-  background: url('chrome-extension://__MSG_@@extension_id__/mail-big.png');
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  background-size: 20px 20px;
-}
-
-input[type=email] {
-  background: url('chrome-extension://__MSG_@@extension_id__/mailOpen-big.png');
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  background-size: 20px 20px;
-}
-
-input[type=text]:focus {
-  background: url('chrome-extension://__MSG_@@extension_id__/mail-big.png');
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-}
-
-input[type=email]:focus {
-  background: url('chrome-extension://__MSG_@@extension_id__/mailOpen-big.png');
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-}
-
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
   background-color: #8EE4AF;
   border: none;
@@ -116,4 +90,8 @@ input[type=button] {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+}
+
+.placeicons {
+  font-family: "fontawesome"
 }
